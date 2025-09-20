@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPTD Puskesmas Ganra - Formulir Kunjungan Rumah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-2">UPTD PUSKESMAS GANRA</h1>
+                <p class="text-xl opacity-90">Formulir Kunjungan Rumah</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Information -->
+    <section class="py-8 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Informasi Kontak</h2>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="text-center p-4">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fab fa-whatsapp text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">WhatsApp</h3>
+                    <p class="text-gray-600">082-348-550-595</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-envelope text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Email</h3>
+                    <p class="text-gray-600">puskesmasganra17@gmail.com</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fab fa-instagram text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Instagram</h3>
+                    <p class="text-gray-600">@puskesmasganra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Formulir Kunjungan Rumah</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Pilih formulir yang sesuai dengan kategori kunjungan rumah yang akan dilakukan
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <!-- Form 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Data Keluarga dan Anggota Keluarga</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir untuk mencatat data lengkap keluarga dan seluruh anggota keluarga</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20ILP.html', '_blank')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-pink-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-baby text-pink-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Ibu Hamil</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir pemeriksaan dan monitoring kesehatan ibu hamil</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20IBU%20HAMIL.html', '_blank')" class="w-full bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Ibu Bersalin & Nifas</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir untuk ibu yang sedang dalam masa persalinan dan nifas</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20IBU%20BERSALIN%20DAN%20NIFAS.html', '_blank')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-baby-carriage text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Bayi (0-6 Bulan)</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir pemeriksaan kesehatan bayi usia 0-6 bulan</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20BAYI%200-6%20BULAN.html', '_blank')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-child text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Bayi, Balita & Anak Prasekolah</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir untuk anak usia balita dan prasekolah</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20BAYI%20BALITA%20DAN%20ANAK%20USIA%20PRA%20SEKOLAH.html', '_blank')" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Usia Sekolah / Remaja</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir untuk anak usia sekolah dan remaja</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20USIA%20SEKOLAH-REMAJA.html', '_blank')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 7 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user text-teal-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Usia Dewasa</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir pemeriksaan kesehatan untuk usia dewasa</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20USIA%20DEWASA.html', '_blank')" class="w-full bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 8 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-walking text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Lansia</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir pemeriksaan kesehatan untuk lanjut usia</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20-%20LANSIA.html', '_blank')" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+
+                <!-- Form 9 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-lungs text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Checklist Pengendalian Penyakit Menular (TBC)</h3>
+                    <p class="text-gray-600 text-sm mb-4">Formulir khusus untuk pengendalian dan monitoring TBC</p>
+                    <button onclick="window.open('file:///C:/Users/Lenovo/Downloads/KUNJUNGAN%20RUMAH/KUNJUNGAN%20RUMAH%20PENGENDALIAN%20PENYAKIT%20MENULAR%20(TBC).html', '_blank')" class="w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Buka Formulir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Modal -->
+    <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden">
+            <div class="flex justify-between items-center p-6 border-b">
+                <h3 class="text-xl font-semibold text-gray-800" id="formTitle">Formulir Kunjungan Rumah</h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto max-h-[calc(90vh-120px)]" id="formContent">
+                <!-- Form content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-semibold mb-4">UPTD Puskesmas Ganra</h3>
+            <p class="text-gray-400 mb-4">Melayani dengan sepenuh hati untuk kesehatan masyarakat</p>
+            <div class="flex justify-center space-x-6">
+                <a href="tel:082348550595" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-phone mr-2"></i>082-348-550-595
+                </a>
+                <a href="mailto:puskesmasganra17@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const formTemplates = {
+            'Data Keluarga dan Anggota Keluarga': `
+                <form onsubmit="submitForm(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Kepala Keluarga</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Alamat Lengkap</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">RT/RW</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Kelurahan/Desa</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Kecamatan</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
+                            <input type="tel" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-6">
+                        <h4 class="text-lg font-semibold mb-4">Data Anggota Keluarga</h4>
+                        <div id="familyMembers">
+                            <div class="grid md:grid-cols-4 gap-4 mb-4 p-4 bg-gray-50 rounded-lg">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                    <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Umur</label>
+                                    <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Kelamin</label>
+                                    <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                                        <option value="">Pilih</option>
+                                        <option value="L">Laki-laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Hubungan dengan KK</label>
+                                    <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                                        <option value="">Pilih</option>
+                                        <option value="Kepala Keluarga">Kepala Keluarga</option>
+                                        <option value="Istri">Istri</option>
+                                        <option value="Anak">Anak</option>
+                                        <option value="Orang Tua">Orang Tua</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="addFamilyMember()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg mb-4">
+                            <i class="fas fa-plus mr-2"></i>Tambah Anggota Keluarga
+                        </button>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4 pt-6 border-t">
+                        <button type="button" onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">Batal</button>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">Simpan Data</button>
+                    </div>
+                </form>
+            `,
+            
+            'Checklist Ibu Hamil': `
+                <form onsubmit="submitForm(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Ibu</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Umur</label>
+                            <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Usia Kehamilan (minggu)</label>
+                            <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Kehamilan ke-</label>
+                            <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500" required>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Pemeriksaan Kesehatan</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tekanan Darah</label>
+                                <input type="text" placeholder="contoh: 120/80" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Berat Badan (kg)</label>
+                                <input type="number" step="0.1" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tinggi Fundus (cm)</label>
+                                <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Denyut Jantung Janin</label>
+                                <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Checklist Pemeriksaan</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500">
+                                <span class="text-sm text-gray-700">Konsumsi tablet Fe</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500">
+                                <span class="text-sm text-gray-700">Imunisasi TT</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500">
+                                <span class="text-sm text-gray-700">Pemeriksaan laboratorium</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500">
+                                <span class="text-sm text-gray-700">Konseling gizi</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Catatan Tambahan</label>
+                        <textarea rows="4" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500"></textarea>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4 pt-6 border-t">
+                        <button type="button" onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">Batal</button>
+                        <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-lg">Simpan Data</button>
+                    </div>
+                </form>
+            `,
+            
+            'Checklist Ibu Bersalin & Nifas': `
+                <form onsubmit="submitForm(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Ibu</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal Persalinan</label>
+                            <input type="date" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Persalinan</label>
+                            <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500" required>
+                                <option value="">Pilih</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Caesar">Caesar</option>
+                                <option value="Vakum">Vakum</option>
+                                <option value="Forceps">Forceps</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Hari ke- Nifas</label>
+                            <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500" required>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Pemeriksaan Fisik</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tekanan Darah</label>
+                                <input type="text" placeholder="contoh: 120/80" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Suhu Tubuh (°C)</label>
+                                <input type="number" step="0.1" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tinggi Fundus Uteri</label>
+                                <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Kondisi Lochea</label>
+                                <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+                                    <option value="">Pilih</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Berbau">Berbau</option>
+                                    <option value="Berlebihan">Berlebihan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Checklist Perawatan</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-sm text-gray-700">Inisiasi Menyusu Dini (IMD)</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-sm text-gray-700">ASI Eksklusif</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-sm text-gray-700">Perawatan payudara</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-sm text-gray-700">Konseling KB</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Catatan Perawatan</label>
+                        <textarea rows="4" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"></textarea>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4 pt-6 border-t">
+                        <button type="button" onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">Batal</button>
+                        <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg">Simpan Data</button>
+                    </div>
+                </form>
+            `,
+            
+            'Checklist Bayi (0-6 Bulan)': `
+                <form onsubmit="submitForm(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Bayi</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal Lahir</label>
+                            <input type="date" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Kelamin</label>
+                            <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                                <option value="">Pilih</option>
+                                <option value="L">Laki-laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Ibu</label>
+                            <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Pengukuran Antropometri</h4>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Berat Badan (gram)</label>
+                                <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Panjang Badan (cm)</label>
+                                <input type="number" step="0.1" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Lingkar Kepala (cm)</label>
+                                <input type="number" step="0.1" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">Checklist Perawatan Bayi</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                <span class="text-sm text-gray-700">ASI Eksklusif</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                <span class="text-sm text-gray-700">Imunisasi sesuai jadwal</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                <span class="text-sm text-gray-700">Vitamin A</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                <span class="text-sm text-gray-700">Perawatan tali pusat</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Catatan Perkembangan</label>
+                        <textarea rows="4" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4 pt-6 border-t">
+                        <button type="button" onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">Batal</button>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg">Simpan Data</button>
+                    </div>
+                </form>
+            `
+        };
+
+        function showFormNotice(formName) {
+            document.getElementById('formTitle').textContent = formName;
+            
+            if (formTemplates[formName]) {
+                document.getElementById('formContent').innerHTML = formTemplates[formName];
+            } else {
+                document.getElementById('formContent').innerHTML = `
+                    <div class="text-center py-8">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-alt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-4">Formulir ${formName}</h4>
+                        <p class="text-gray-600 mb-6">Formulir ini sedang dalam pengembangan. Silakan hubungi petugas kesehatan untuk informasi lebih lanjut.</p>
+                        <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">Tutup</button>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('formModal').classList.remove('hidden');
+            document.getElementById('formModal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('formModal').classList.add('hidden');
+            document.getElementById('formModal').classList.remove('flex');
+        }
+
+        function addFamilyMember() {
+            const container = document.getElementById('familyMembers');
+            const memberDiv = document.createElement('div');
+            memberDiv.className = 'grid md:grid-cols-4 gap-4 mb-4 p-4 bg-gray-50 rounded-lg relative';
+            memberDiv.innerHTML = `
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                    <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Umur</label>
+                    <input type="number" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Kelamin</label>
+                    <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        <option value="">Pilih</option>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Hubungan dengan KK</label>
+                    <select class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                        <option value="">Pilih</option>
+                        <option value="Kepala Keluarga">Kepala Keluarga</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak">Anak</option>
+                        <option value="Orang Tua">Orang Tua</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <button type="button" onclick="this.parentElement.remove()" class="absolute top-2 right-2 text-red-500 hover:text-red-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            container.appendChild(memberDiv);
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            
+            // Show success message
+            const formContent = document.getElementById('formContent');
+            formContent.innerHTML = `
+                <div class="text-center py-8">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check text-green-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-4 text-green-800">Data Berhasil Disimpan!</h4>
+                    <p class="text-gray-600 mb-6">Formulir telah berhasil disimpan ke sistem. Terima kasih atas partisipasi Anda.</p>
+                    <button onclick="closeModal()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg">Tutup</button>
+                </div>
+            `;
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('formModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'981fc18b737d5f5f',t:'MTc1ODM1NDg3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
